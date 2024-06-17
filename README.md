@@ -114,4 +114,6 @@ data_reader = ParquetReader("hf://datasets/HuggingFaceFW/fineweb/data", limit=3)
 for document in data_reader():
     # do something with document
     print("\n",document)
+
+# ...
 ```
