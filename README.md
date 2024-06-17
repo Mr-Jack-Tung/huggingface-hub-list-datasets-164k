@@ -11,8 +11,22 @@ print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"
 
 # huggingface_hub_list_datasets: 163.963 datasets
 
-for dataset_path in huggingface_hub_list_datasets:
-    print(dataset_path)
+# for dataset_path in huggingface_hub_list_datasets:
+for dataset_path in huggingface_hub_list_datasets[:5]:
+    print("\n","="*60)
+    print("dataset path:",dataset_path)
+
+    from datasets import get_dataset_config_names
+    configs = get_dataset_config_names(dataset_path)
+    print("Subset:",configs)
+
+    from datasets import load_dataset_builder
+    for subset in configs:
+        ds_builder = load_dataset_builder(path=dataset_path,name=subset)
+        print("\n",subset,":",ds_builder.info)
+
+        # dataset = load_dataset(path=dataset_path, name=subset, split="train", trust_remote_code=True)
+        # print("\n",dataset)
 
 # ... 163.963 datasets
 ```
