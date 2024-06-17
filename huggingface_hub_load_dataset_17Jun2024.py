@@ -21,7 +21,7 @@ for subset in configs:
     
     # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
     # dataset.save_to_disk(dataset_path=dataset_path)
-    # print("save dataset to:",dataset_path)
+    # print("Save dataset to:",dataset_path)
 
 from datasets import load_dataset_builder
 for subset in configs:
