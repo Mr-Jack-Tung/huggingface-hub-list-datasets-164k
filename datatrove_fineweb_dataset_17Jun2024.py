@@ -18,7 +18,7 @@ from datatrove.pipeline.readers import ParquetReader
 
 # data_file = 'data/CC-MAIN-2024-10'
 # data_file = 'sample/100BT'
-# data_reader = ParquetReader("hf://datasets/HuggingFaceFW/fineweb/"+data_file, limit=3) 
+# data_reader = ParquetReader("hf://datasets/HuggingFaceFW/fineweb/" + data_file, limit=3) 
 
 data_reader = ParquetReader("hf://datasets/HuggingFaceFW/fineweb/data", limit=3) 
 for document in data_reader():
