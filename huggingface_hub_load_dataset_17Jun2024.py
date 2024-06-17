@@ -18,6 +18,10 @@ print("\n","Subset:",configs)
 for subset in configs:
     dataset = load_dataset(path=dataset_path, name=subset) 
     print("\n",dataset)
+    
+    # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
+    # dataset.save_to_disk(dataset_path=dataset_path)
+    # print("save dataset to:",dataset_path)
 
 from datasets import load_dataset_builder
 for subset in configs:
