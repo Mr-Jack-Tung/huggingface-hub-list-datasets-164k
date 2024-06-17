@@ -16,8 +16,8 @@ print("\n","Subset:",configs)
 # Subset: ['wikitext-103-raw-v1', 'wikitext-103-v1', 'wikitext-2-raw-v1', 'wikitext-2-v1']
 
 for subset in configs:
-	dataset = load_dataset(path=dataset_path, name=subset) 
-	print("\n",dataset)
+    dataset = load_dataset(path=dataset_path, name=subset) 
+    print("\n",dataset)
 
 from datasets import load_dataset_builder
 for subset in configs:
