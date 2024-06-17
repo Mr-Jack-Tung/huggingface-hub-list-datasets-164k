@@ -101,7 +101,7 @@ DatasetDict({
 """
 ```
 
-## Read Fineweb Dataset (15-trillion tokens, 44TB disk space) with datatrove is supper fast ...
+## Read Fineweb Dataset (15-trillion tokens, 44TB disk space) with datatrove is supper fast ... you can start using it right away!
 
 ```
 # % pip install datatrove
