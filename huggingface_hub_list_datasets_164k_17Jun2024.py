@@ -30,5 +30,7 @@ for dataset_path in huggingface_hub_list_datasets[:5]:
         # dataset = load_dataset(path=dataset_path, name=subset, split="train", trust_remote_code=True)
         # print("\n",dataset)
 
-        # dataset.save_to_disk(dataset_path="./huggingface_datasets/" + dataset_path)
+        # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
+        # dataset.save_to_disk(dataset_path=dataset_path)
+        # print("Save dataset to:",dataset_path)
 
