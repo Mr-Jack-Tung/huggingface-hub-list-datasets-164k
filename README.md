@@ -53,8 +53,12 @@ print("\n","Subset:",configs)
 # Subset: ['wikitext-103-raw-v1', 'wikitext-103-v1', 'wikitext-2-raw-v1', 'wikitext-2-v1']
 
 for subset in configs:
-	dataset = load_dataset(path=dataset_path, name=subset) 
-	print("\n",dataset)
+    dataset = load_dataset(path=dataset_path, name=subset) 
+    print("\n",dataset)
+
+    # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
+    # dataset.save_to_disk(dataset_path=dataset_path)
+    # print("Save dataset to:",dataset_path)
 
 from datasets import load_dataset_builder
 for subset in configs:
