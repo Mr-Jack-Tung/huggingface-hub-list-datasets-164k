@@ -28,6 +28,11 @@ for subset in configs:
     ds_builder = load_dataset_builder(path=dataset_path,name=subset)
     print("\n",ds_builder.info)
 
+# from datasets import load_from_disk
+# dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
+# dataset = load_from_disk(dataset_path=dataset_path)
+# print(dataset)
+
 """
 Subset: ['wikitext-103-raw-v1', 'wikitext-103-v1', 'wikitext-2-raw-v1', 'wikitext-2-v1']
 
