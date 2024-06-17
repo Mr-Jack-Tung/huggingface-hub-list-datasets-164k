@@ -95,74 +95,23 @@ DatasetDict({
         num_rows: 3760
     })
 })
-Downloading data: 100%|███████████████████████████████████████████████| 722k/722k [00:00<00:00, 1.26MB/s]
-Downloading data: 100%|███████████████████████████████████████████████| 156M/156M [00:10<00:00, 15.2MB/s]
-Downloading data: 100%|███████████████████████████████████████████████| 156M/156M [00:09<00:00, 16.4MB/s]
-Downloading data: 100%|████████████████████████████████████████████████| 655k/655k [00:01<00:00, 414kB/s]
-Generating test split: 100%|██████████████████████████████| 4358/4358 [00:00<00:00, 611575.78 examples/s]
-Generating train split: 100%|██████████████████████| 1801350/1801350 [00:00<00:00, 3011198.22 examples/s]
-Generating validation split: 100%|███████████████████████| 3760/3760 [00:00<00:00, 1349066.13 examples/s]
-DatasetDict({
-    test: Dataset({
-        features: ['text'],
-        num_rows: 4358
-    })
-    train: Dataset({
-        features: ['text'],
-        num_rows: 1801350
-    })
-    validation: Dataset({
-        features: ['text'],
-        num_rows: 3760
-    })
-})
-Downloading data: 100%|███████████████████████████████████████████████| 733k/733k [00:00<00:00, 2.03MB/s]
-Downloading data: 100%|█████████████████████████████████████████████| 6.36M/6.36M [00:00<00:00, 11.6MB/s]
-Downloading data: 100%|███████████████████████████████████████████████| 657k/657k [00:00<00:00, 1.93MB/s]
-Generating test split: 100%|██████████████████████████████| 4358/4358 [00:00<00:00, 715972.46 examples/s]
-Generating train split: 100%|██████████████████████████| 36718/36718 [00:00<00:00, 1399575.19 examples/s]
-Generating validation split: 100%|███████████████████████| 3760/3760 [00:00<00:00, 1436693.36 examples/s]
-DatasetDict({
-    test: Dataset({
-        features: ['text'],
-        num_rows: 4358
-    })
-    train: Dataset({
-        features: ['text'],
-        num_rows: 36718
-    })
-    validation: Dataset({
-        features: ['text'],
-        num_rows: 3760
-    })
-})
-Downloading data: 100%|███████████████████████████████████████████████| 685k/685k [00:00<00:00, 2.26MB/s]
-Downloading data: 100%|█████████████████████████████████████████████| 6.07M/6.07M [00:00<00:00, 13.4MB/s]
-Downloading data: 100%|███████████████████████████████████████████████| 618k/618k [00:00<00:00, 2.08MB/s]
-Generating test split: 100%|██████████████████████████████| 4358/4358 [00:00<00:00, 795871.33 examples/s]
-Generating train split: 100%|██████████████████████████| 36718/36718 [00:00<00:00, 1388846.89 examples/s]
-Generating validation split: 100%|███████████████████████| 3760/3760 [00:00<00:00, 1436693.36 examples/s]
-DatasetDict({
-    test: Dataset({
-        features: ['text'],
-        num_rows: 4358
-    })
-    train: Dataset({
-        features: ['text'],
-        num_rows: 36718
-    })
-    validation: Dataset({
-        features: ['text'],
-        num_rows: 3760
-    })
-})
-
+...
  DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-103-raw-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1305088, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=546500949, num_examples=1801350, shard_lengths=[1648675, 152675], dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1159288, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/test-00000-of-00001.parquet': {'num_bytes': 732610, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00000-of-00002.parquet': {'num_bytes': 156987808, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00001-of-00002.parquet': {'num_bytes': 157088770, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/validation-00000-of-00001.parquet': {'num_bytes': 657209, 'checksum': None}}, download_size=315466397, post_processing_size=None, dataset_size=548965325, size_in_bytes=864431722)
-
- DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-103-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1295575, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=545141915, num_examples=1801350, shard_lengths=[1652675, 148675], dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1154751, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1/test-00000-of-00001.parquet': {'num_bytes': 721735, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1/train-00000-of-00002.parquet': {'num_bytes': 155788327, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1/train-00001-of-00002.parquet': {'num_bytes': 155928670, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-v1/validation-00000-of-00001.parquet': {'num_bytes': 655106, 'checksum': None}}, download_size=313093838, post_processing_size=None, dataset_size=547592241, size_in_bytes=860686079)
-
- DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-2-raw-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1305088, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=11061717, num_examples=36718, shard_lengths=None, dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1159288, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/test-00000-of-00001.parquet': {'num_bytes': 732610, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet': {'num_bytes': 6357543, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/validation-00000-of-00001.parquet': {'num_bytes': 657209, 'checksum': None}}, download_size=7747362, post_processing_size=None, dataset_size=13526093, size_in_bytes=21273455)
-
- DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-2-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1270947, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=10918118, num_examples=36718, shard_lengths=None, dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1134123, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-v1/test-00000-of-00001.parquet': {'num_bytes': 685430, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-v1/train-00000-of-00001.parquet': {'num_bytes': 6068114, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-v1/validation-00000-of-00001.parquet': {'num_bytes': 617738, 'checksum': None}}, download_size=7371282, post_processing_size=None, dataset_size=13323188, size_in_bytes=20694470)
+...
 """
+```
+
+## Read Fineweb Dataset (15-trillion tokens, 44TB disk space) with datatrove is supper fast ...
+
+```
+# % pip install datatrove
+from datatrove.pipeline.readers import ParquetReader
+
+# limit determines how many documents will be streamed (remove for all)
+# to fetch a specific dump: hf://datasets/HuggingFaceFW/fineweb/data/CC-MAIN-2024-10
+# replace "data" with "sample/100BT" to use the 100BT sample
+data_reader = ParquetReader("hf://datasets/HuggingFaceFW/fineweb/data", limit=3) 
+for document in data_reader():
+    # do something with document
+    print("\n",document)
 ```
