@@ -19,6 +19,7 @@ print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"
 #         await asyncio.sleep(0.1)
 
 from datasets import get_dataset_config_names
+from datasets import load_dataset_builder
 
 async def main(): 
     # for dataset_path in huggingface_hub_list_datasets:
@@ -29,7 +30,6 @@ async def main():
         configs = get_dataset_config_names(dataset_path)
         print("Subset:",configs)
 
-        from datasets import load_dataset_builder
         for subset in configs:
 	    ds_builder = load_dataset_builder(path=dataset_path, name=subset)
 	    dataset_info = ds_builder.info
