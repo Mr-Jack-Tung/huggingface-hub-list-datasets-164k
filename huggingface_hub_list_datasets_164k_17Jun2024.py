@@ -21,17 +21,18 @@ print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"
 #         print(dataset_path)
 #         await asyncio.sleep(0.1)
 
+from datasets import get_dataset_config_names
+from datasets import load_dataset_builder
+
 async def main(): 
     # for dataset_path in huggingface_hub_list_datasets:
     for dataset_path in huggingface_hub_list_datasets[:5]:
         print("\n","="*60)
         print("Dataset path:",dataset_path)
     
-        from datasets import get_dataset_config_names
         configs = get_dataset_config_names(dataset_path)
         print("Subset:",configs)
-    
-        from datasets import load_dataset_builder
+
         for subset in configs:
             ds_builder = load_dataset_builder(path=dataset_path, name=subset)
             dataset_info = ds_builder.info
@@ -51,3 +52,5 @@ async def main():
             await asyncio.sleep(0.5)
 
 asyncio.run(main())
+
+# ... 164.588 datasets
