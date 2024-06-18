@@ -3,17 +3,18 @@
 - Date: 17 Jun 2024
 
 ```
+# % pip install datasets
 from datasets import list_datasets
 
 huggingface_hub_list_datasets = list_datasets()
 
 print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"datasets")
 
-# (17/06) huggingface_hub_list_datasets: 163.963 datasets
-# (18/06) huggingface_hub_list_datasets: 164.588 datasets
-
 # for dataset_path in huggingface_hub_list_datasets:
 #     print(dataset_path)
+
+# (17/06) huggingface_hub_list_datasets: 163.963 datasets
+# (18/06) huggingface_hub_list_datasets: 164.588 datasets
 
 for dataset_path in huggingface_hub_list_datasets[:5]:
     print("\n","="*60)
@@ -49,6 +50,7 @@ for dataset_path in huggingface_hub_list_datasets[:5]:
 - Date: 17 Jun 2024
 
 ```
+# % pip install datasets
 from datasets import load_dataset
 from datasets import get_dataset_config_names
 
