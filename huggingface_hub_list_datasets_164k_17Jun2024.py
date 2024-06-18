@@ -27,8 +27,13 @@ for dataset_path in huggingface_hub_list_datasets[:5]:
 
     from datasets import load_dataset_builder
     for subset in configs:
-        ds_builder = load_dataset_builder(path=dataset_path,name=subset)
-        print("\n",subset,":",ds_builder.info)
+        ds_builder = load_dataset_builder(path=dataset_path, name=subset)
+        dataset_info = ds_builder.info
+        print("\n",subset,":",dataset_info)
+
+        # print("\n","splits['test']:",dataset_info.splits['test'])
+        # print("\n","splits['train']:",dataset_info.splits['train'])
+        # print("\n","splits['validation']:",dataset_info.splits['validation'])
 
         # dataset = load_dataset(path=dataset_path, name=subset, split="train", trust_remote_code=True)
         # print("\n",dataset)
