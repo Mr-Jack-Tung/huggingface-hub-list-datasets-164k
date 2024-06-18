@@ -9,10 +9,10 @@ from datasets import list_datasets
 
 huggingface_hub_list_datasets = list_datasets()
 
-print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"datasets")
+print("\n","HUGGINGFACE-HUB LIST DATASETS:",len(huggingface_hub_list_datasets),"datasets")
 
-# (17/06) huggingface_hub_list_datasets: 163.963 datasets
-# (18/06) huggingface_hub_list_datasets: 164.588 datasets
+# (17/06) HUGGINGFACE-HUB LIST DATASETS: 163.963 datasets
+# (18/06) HUGGINGFACE-HUB LIST DATASETS: 164.588 datasets
 
 # async def main():
 #     for dataset_path in huggingface_hub_list_datasets:
