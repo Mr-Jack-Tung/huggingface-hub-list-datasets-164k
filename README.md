@@ -1,4 +1,4 @@
-# HUGGINGFACE-HUB LIST DATASETS: 163.963 datasets
+# HUGGINGFACE-HUB LIST DATASETS: 164.588 datasets
 - From: Mr.Jack
 - Date: 17 Jun 2024
 
@@ -9,12 +9,15 @@ huggingface_hub_list_datasets = list_datasets()
 
 print("\n","huggingface_hub_list_datasets:",len(huggingface_hub_list_datasets),"datasets")
 
-# huggingface_hub_list_datasets: 163.963 datasets
+# (17/06) huggingface_hub_list_datasets: 163.963 datasets
+# (18/06) huggingface_hub_list_datasets: 164.588 datasets
 
 # for dataset_path in huggingface_hub_list_datasets:
+#     print(dataset_path)
+
 for dataset_path in huggingface_hub_list_datasets[:5]:
     print("\n","="*60)
-    print("dataset path:",dataset_path)
+    print("Dataset path:",dataset_path)
 
     from datasets import get_dataset_config_names
     configs = get_dataset_config_names(dataset_path)
@@ -32,7 +35,7 @@ for dataset_path in huggingface_hub_list_datasets[:5]:
 	# dataset.save_to_disk(dataset_path=dataset_path)
 	# print("\n","Save dataset to:",dataset_path)
 
-# ... 163.963 datasets
+# ... 164.588 datasets
 ```
 
 
