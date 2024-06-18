@@ -17,7 +17,7 @@ print("\n","Subset:",configs)
 
 for subset in configs:
     dataset = load_dataset(path=dataset_path, name=subset) 
-    print("\n",dataset)
+    print("\n",subset,":",dataset)
     
     # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
     # dataset.save_to_disk(dataset_path=dataset_path)
@@ -25,8 +25,13 @@ for subset in configs:
 
 from datasets import load_dataset_builder
 for subset in configs:
-    ds_builder = load_dataset_builder(path=dataset_path,name=subset)
-    print("\n",ds_builder.info)
+    ds_builder = load_dataset_builder(path=dataset_path, name=subset)
+    dataset_info = ds_builder.info
+    print("\n",subset,":",dataset_info)
+
+    # print("\n","splits['test']:",dataset_info.splits['test'])
+    # print("\n","splits['train']:",dataset_info.splits['train'])
+    # print("\n","splits['validation']:",dataset_info.splits['validation'])
 
 # from datasets import load_from_disk
 # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
