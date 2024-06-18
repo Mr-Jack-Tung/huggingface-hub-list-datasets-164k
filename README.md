@@ -26,11 +26,11 @@ async def main():
         print("\n","="*60)
         print("Dataset path:",dataset_path)
 
-        configs = get_dataset_config_names(dataset_path)
+        configs = get_dataset_config_names(dataset_path, trust_remote_code=True)
         print("Subset:",configs)
 
         for subset in configs:
-	    ds_builder = load_dataset_builder(path=dataset_path, name=subset)
+	    ds_builder = load_dataset_builder(path=dataset_path, name=subset, trust_remote_code=True)
 	    dataset_info = ds_builder.info
 	    print("\n",subset,":",dataset_info)
 
@@ -64,14 +64,14 @@ from datasets import get_dataset_config_names
 
 dataset_path = 'Salesforce/wikitext'
 
-configs = get_dataset_config_names(dataset_path)
+configs = get_dataset_config_names(dataset_path, trust_remote_code=True)
 
 print("\n","Subset:",configs)
 
 # Subset: ['wikitext-103-raw-v1', 'wikitext-103-v1', 'wikitext-2-raw-v1', 'wikitext-2-v1']
 
 for subset in configs:
-    dataset = load_dataset(path=dataset_path, name=subset) 
+    dataset = load_dataset(path=dataset_path, name=subset, trust_remote_code=True)
     print("\n",subset,":",dataset)
 
     # dataset_path = "./huggingface_datasets/" + dataset_path + "/" + subset
@@ -80,7 +80,7 @@ for subset in configs:
 
 from datasets import load_dataset_builder
 for subset in configs:
-    ds_builder = load_dataset_builder(path=dataset_path, name=subset)
+    ds_builder = load_dataset_builder(path=dataset_path, name=subset, trust_remote_code=True)
     dataset_info = ds_builder.info
     print("\n",subset,":",dataset_info)
 
