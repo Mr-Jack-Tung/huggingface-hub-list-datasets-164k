@@ -14,10 +14,8 @@ print("\n","HUGGINGFACE-HUB LIST DATASETS:",len(huggingface_hub_list_datasets),"
 # (17/06) HUGGINGFACE-HUB LIST DATASETS: 163.963 datasets
 # (18/06) HUGGINGFACE-HUB LIST DATASETS: 164.588 datasets
 
-# async def main():
-#     for dataset_path in huggingface_hub_list_datasets:
-#         print(dataset_path)
-#         await asyncio.sleep(0.1)
+# for dataset_path in huggingface_hub_list_datasets:
+#     print(dataset_path)
 
 from datasets import get_dataset_config_names
 from datasets import load_dataset_builder
