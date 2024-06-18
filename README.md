@@ -94,7 +94,7 @@ Downloading data: 100%|███████████████████
 Generating test split: 100%|██████████████████████████████| 4358/4358 [00:00<00:00, 125060.91 examples/s]
 Generating train split: 100%|██████████████████████| 1801350/1801350 [00:00<00:00, 2960200.88 examples/s]
 Generating validation split: 100%|████████████████████████| 3760/3760 [00:00<00:00, 711765.27 examples/s]
-DatasetDict({
+wikitext-103-raw-v1 : DatasetDict({
     test: Dataset({
         features: ['text'],
         num_rows: 4358
@@ -109,7 +109,7 @@ DatasetDict({
     })
 })
 ...
- DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-103-raw-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1305088, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=546500949, num_examples=1801350, shard_lengths=[1648675, 152675], dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1159288, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/test-00000-of-00001.parquet': {'num_bytes': 732610, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00000-of-00002.parquet': {'num_bytes': 156987808, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00001-of-00002.parquet': {'num_bytes': 157088770, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/validation-00000-of-00001.parquet': {'num_bytes': 657209, 'checksum': None}}, download_size=315466397, post_processing_size=None, dataset_size=548965325, size_in_bytes=864431722)
+ wikitext-103-raw-v1 : DatasetInfo(description='', citation='', homepage='', license='', features={'text': Value(dtype='string', id=None)}, post_processed=None, supervised_keys=None, task_templates=None, builder_name='parquet', dataset_name='wikitext', config_name='wikitext-103-raw-v1', version=0.0.0, splits={'test': SplitInfo(name='test', num_bytes=1305088, num_examples=4358, shard_lengths=None, dataset_name='wikitext'), 'train': SplitInfo(name='train', num_bytes=546500949, num_examples=1801350, shard_lengths=[1648675, 152675], dataset_name='wikitext'), 'validation': SplitInfo(name='validation', num_bytes=1159288, num_examples=3760, shard_lengths=None, dataset_name='wikitext')}, download_checksums={'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/test-00000-of-00001.parquet': {'num_bytes': 732610, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00000-of-00002.parquet': {'num_bytes': 156987808, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/train-00001-of-00002.parquet': {'num_bytes': 157088770, 'checksum': None}, 'hf://datasets/Salesforce/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-103-raw-v1/validation-00000-of-00001.parquet': {'num_bytes': 657209, 'checksum': None}}, download_size=315466397, post_processing_size=None, dataset_size=548965325, size_in_bytes=864431722)
 ...
 """
 ```
