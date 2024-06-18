@@ -28,11 +28,11 @@ async def main():
         print("\n","="*60)
         print("Dataset path:",dataset_path)
     
-        configs = get_dataset_config_names(dataset_path)
+        configs = get_dataset_config_names(dataset_path, trust_remote_code=True)
         print("Subset:",configs)
 
         for subset in configs:
-            ds_builder = load_dataset_builder(path=dataset_path, name=subset)
+            ds_builder = load_dataset_builder(path=dataset_path, name=subset, trust_remote_code=True)
             dataset_info = ds_builder.info
             print("\n",subset,":",dataset_info)
     
