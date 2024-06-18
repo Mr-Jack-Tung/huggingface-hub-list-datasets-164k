@@ -5,6 +5,7 @@ File: load_dataset_streaming_17Jun2024.py
 - Date: 17 Jun 2024
 """
 
+# % pip install datasets
 from datasets import load_dataset
 
 dataset_path = 'Salesforce/wikitext'
