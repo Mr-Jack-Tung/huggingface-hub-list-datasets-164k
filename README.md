@@ -4,6 +4,7 @@
 
 ```
 # % pip install datasets
+import asyncio
 from datasets import list_datasets
 
 huggingface_hub_list_datasets = list_datasets()
