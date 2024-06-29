@@ -1,4 +1,4 @@
-# HUGGINGFACE-HUB LIST DATASETS: 164.588 datasets
+# HUGGINGFACE-HUB LIST DATASETS: 170.112 datasets
 - From: Mr.Jack
 - Date: 17 Jun 2024
 
@@ -13,6 +13,7 @@ print("\n","HUGGINGFACE-HUB LIST DATASETS:",len(huggingface_hub_list_datasets),"
 
 # (17/06) HUGGINGFACE-HUB LIST DATASETS: 163.963 datasets
 # (18/06) HUGGINGFACE-HUB LIST DATASETS: 164.588 datasets
+# (29/06) HUGGINGFACE-HUB LIST DATASETS: 170.112 datasets
 
 # for dataset_path in huggingface_hub_list_datasets:
 #     print(dataset_path)
@@ -49,7 +50,7 @@ async def main():
 
 asyncio.run(main())
 
-# ... 164.588 datasets
+# ... 170.112 datasets
 ```
 
 
@@ -125,6 +126,7 @@ wikitext-103-raw-v1 : DatasetDict({
 ```
 
 ## Read Fineweb Dataset (15-trillion tokens, 44TB disk space) with datatrove is supper fast ... you can start using it right away!
+- URL: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 
 ```
 # % pip install datatrove
