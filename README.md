@@ -1,6 +1,7 @@
 # HUGGINGFACE-HUB LIST DATASETS: 170.112 datasets
 - From: Mr.Jack
 - Date: 17 Jun 2024
+- If you like what I do, give me a star ^^ ~> ⭐
 
 ```
 # % pip install datasets
